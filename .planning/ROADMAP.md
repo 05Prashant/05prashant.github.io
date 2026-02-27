@@ -27,7 +27,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. All pages show the dark background (~#1e2030) with white text and no flash of unstyled content
   3. Navigation shows "Prashant Khanchandani" on the left and Work / CV links on the right on every page
   4. The site is readable and functional on a phone without horizontal scrolling or broken layout
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Astro 5 project and establish GitHub Pages deploy pipeline
+- [ ] 01-02-PLAN.md — Dark theme CSS, BaseLayout, Nav component, and placeholder pages
+- [ ] 01-03-PLAN.md — Human visual verification of live site against all Phase 1 success criteria
 
 ### Phase 2: Templates
 **Goal**: Every page type is built and working — case study detail, work index, CV, and 404 — using schema-validated markdown so adding content requires zero code changes
@@ -58,6 +63,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/3 | Not started | - |
 | 2. Templates | 0/TBD | Not started | - |
 | 3. Content | 0/TBD | Not started | - |
