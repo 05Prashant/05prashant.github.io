@@ -1,0 +1,95 @@
+/* src/styles/global.css */
+
+/* =====================
+   Design Tokens
+===================== */
+:root {
+  --color-bg: #1e2030;
+  --color-text: #e8e8e8;
+  --color-text-muted: #a0a0b0;
+  --color-accent: #82aaff;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  --max-width: 1100px;
+  --spacing-page: 1.5rem;
+}
+
+/* =====================
+   FOUC Prevention
+   Set on html AND body — html covers iOS overscroll area above the page.
+   If only set on body, a white flash appears on load and on iOS pull-to-refresh.
+===================== */
+html,
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* =====================
+   Reset
+===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =====================
+   Base Styles
+===================== */
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =====================
+   Typography Scale
+   clamp() ensures readable sizes across screen widths without breakpoints
+===================== */
+h1 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* =====================
+   Layout Utility
+===================== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-page);
+}
+
+/* =====================
+   Links
+===================== */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-text);
+}
