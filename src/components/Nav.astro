@@ -1,0 +1,66 @@
+---
+// Nav.astro
+// User root repo: plain href="/" and href="/cv" — no BASE_URL gymnastics needed
+// Work index lives at / (root index.astro), so Work link points to href="/"
+---
+<header>
+  <nav class="nav">
+    <a href="/" class="nav-brand">Prashant Khanchandani</a>
+    <ul class="nav-links" role="list">
+      <li><a href="/">Work</a></li>
+      <li><a href="/cv">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem var(--spacing-page);
+  }
+
+  .nav-brand {
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--color-text);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--color-text-muted);
+    transition: color 0.15s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--color-text);
+  }
+
+  /* Mobile: flex-wrap handles narrow screens — nav brand stays full width, links wrap below */
+  @media (max-width: 480px) {
+    .nav {
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
+      gap: 1.25rem;
+    }
+  }
+</style>
