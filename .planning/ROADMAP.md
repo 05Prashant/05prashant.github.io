@@ -12,7 +12,7 @@ Three phases from blank repo to published portfolio. Phase 1 validates the deplo
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Astro project scaffolded, dark theme applied, nav in place, and live on GitHub Pages before any content work begins
+- [x] **Phase 1: Foundation** - Astro project scaffolded, dark theme applied, nav in place, and live on GitHub Pages before any content work begins
 - [ ] **Phase 2: Templates** - Content Collections schema locked, all page templates built (case study, work index, CV, 404) — no code changes needed after this phase
 - [ ] **Phase 3: Content** - All case studies ported from Squarespace and Docker stubs created — site is fully populated and publishable
 
@@ -31,8 +31,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Astro 5 project and establish GitHub Pages deploy pipeline
-- [ ] 01-02-PLAN.md — Dark theme CSS, BaseLayout, Nav component, and placeholder pages
-- [ ] 01-03-PLAN.md — Human visual verification of live site against all Phase 1 success criteria
+- [x] 01-02-PLAN.md — Dark theme CSS, BaseLayout, Nav component, and placeholder pages
+- [x] 01-03-PLAN.md — Human visual verification of live site against all Phase 1 success criteria
 
 ### Phase 2: Templates
 **Goal**: Every page type is built and working — case study detail, work index, CV, and 404 — using schema-validated markdown so adding content requires zero code changes
@@ -63,6 +63,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 2/3 | In Progress|  |
+| 1. Foundation | 3/3 | Complete | 2026-02-27 |
 | 2. Templates | 0/TBD | Not started | - |
 | 3. Content | 0/TBD | Not started | - |
