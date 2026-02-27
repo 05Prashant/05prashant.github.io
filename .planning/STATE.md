@@ -10,27 +10,27 @@ See: .planning/PROJECT.md (updated 2026-02-26)
 ## Current Position
 
 Phase: 1 of 3 (Foundation)
-Plan: 1 of TBD in current phase
-Status: In progress — Plan 01 complete, awaiting GitHub repo creation for live deploy
-Last activity: 2026-02-27 — Plan 01-01 complete: Astro 5 scaffold and GitHub Pages CI/CD pipeline
+Plan: 2 of TBD in current phase
+Status: In progress — Plan 02 complete, dark theme and nav live in code; awaiting GitHub repo creation for live deploy
+Last activity: 2026-02-27 — Plan 01-02 complete: global CSS dark theme, BaseLayout, Nav component, placeholder pages
 
-Progress: [█░░░░░░░░░] ~10%
+Progress: [██░░░░░░░░] ~20%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 7min
-- Total execution time: 7min
+- Total plans completed: 2
+- Average duration: 6min
+- Total execution time: 12min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1 | 7min | 7min |
+| 01-foundation | 2 | 12min | 6min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (7min)
+- Last 5 plans: 01-01 (7min), 01-02 (5min)
 - Trend: —
 
 *Updated after each plan completion*
@@ -48,6 +48,10 @@ Recent decisions affecting current work:
 - [01-01]: No base path — repo is prashantkhanchandani.github.io (user root), serves at /
 - [01-01]: withastro/action@v5 + OIDC auth (id-token: write) — no PAT in repo secrets needed
 - [01-01]: output: static — no server adapter, pure static generation confirmed
+- [01-02]: Nav Work link points to href='/' not '/work' — work index lives at root index.astro
+- [01-02]: content.config.ts at src/content.config.ts (Astro 5 location, not Astro 4's src/content/config.ts)
+- [01-02]: background-color on html,body (not just body) — prevents FOUC on iOS overscroll and initial load
+- [01-02]: global.css via frontmatter import in BaseLayout — idiomatic Astro 5 pattern
 
 ### Pending Todos
 
@@ -61,5 +65,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-27
-Stopped at: Completed 01-01-PLAN.md — Astro 5 scaffold and GitHub Pages pipeline complete
+Stopped at: Completed 01-02-PLAN.md — dark theme, BaseLayout, Nav component, and placeholder pages complete
 Resume file: None

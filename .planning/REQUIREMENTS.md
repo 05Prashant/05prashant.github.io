@@ -8,9 +8,9 @@
 ### Foundation
 
 - [x] **FOUND-01**: Astro 5 project scaffolded and successfully deployed to `prashantkhanchandani.github.io` via GitHub Actions on push to main
-- [ ] **FOUND-02**: Dark theme global CSS with CSS custom properties — dark background (~#1e2030), white text, minimal sans-serif typography scale
-- [ ] **FOUND-03**: Shared navigation component — "Prashant Khanchandani" on left, Work / CV on right, consistent across all pages
-- [ ] **FOUND-04**: Layout is mobile responsive — readable and functional on phone and tablet
+- [x] **FOUND-02**: Dark theme global CSS with CSS custom properties — dark background (~#1e2030), white text, minimal sans-serif typography scale
+- [x] **FOUND-03**: Shared navigation component — "Prashant Khanchandani" on left, Work / CV on right, consistent across all pages
+- [x] **FOUND-04**: Layout is mobile responsive — readable and functional on phone and tablet
 
 ### Work Index
 
@@ -76,9 +76,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | FOUND-01 | Phase 1 | Complete |
-| FOUND-02 | Phase 1 | Pending |
-| FOUND-03 | Phase 1 | Pending |
-| FOUND-04 | Phase 1 | Pending |
+| FOUND-02 | Phase 1 | Complete |
+| FOUND-03 | Phase 1 | Complete |
+| FOUND-04 | Phase 1 | Complete |
 | WORK-01 | Phase 2 | Pending |
 | WORK-02 | Phase 2 | Pending |
 | CASE-01 | Phase 2 | Pending |
