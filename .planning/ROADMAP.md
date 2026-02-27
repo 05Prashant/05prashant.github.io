@@ -30,7 +30,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold Astro 5 project and establish GitHub Pages deploy pipeline
+- [x] 01-01-PLAN.md — Scaffold Astro 5 project and establish GitHub Pages deploy pipeline
 - [ ] 01-02-PLAN.md — Dark theme CSS, BaseLayout, Nav component, and placeholder pages
 - [ ] 01-03-PLAN.md — Human visual verification of live site against all Phase 1 success criteria
 
@@ -63,6 +63,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Not started | - |
+| 1. Foundation | 1/3 | In progress | - |
 | 2. Templates | 0/TBD | Not started | - |
 | 3. Content | 0/TBD | Not started | - |

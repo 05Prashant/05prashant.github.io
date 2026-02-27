@@ -10,27 +10,27 @@ See: .planning/PROJECT.md (updated 2026-02-26)
 ## Current Position
 
 Phase: 1 of 3 (Foundation)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-02-27 — Roadmap created, 3 phases derived from 13 v1 requirements
+Plan: 1 of TBD in current phase
+Status: In progress — Plan 01 complete, awaiting GitHub repo creation for live deploy
+Last activity: 2026-02-27 — Plan 01-01 complete: Astro 5 scaffold and GitHub Pages CI/CD pipeline
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] ~10%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: —
-- Total execution time: —
+- Total plans completed: 1
+- Average duration: 7min
+- Total execution time: 7min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-foundation | 1 | 7min | 7min |
 
 **Recent Trend:**
-- Last 5 plans: —
+- Last 5 plans: 01-01 (7min)
 - Trend: —
 
 *Updated after each plan completion*
@@ -45,7 +45,9 @@ Recent decisions affecting current work:
 - [Setup]: Astro 5 with static output, plain CSS, Content Collections (loader API), GitHub Pages via withastro/action
 - [Setup]: Dark theme fixed at #1e2030 — no toggle, no light mode
 - [Setup]: Markdown for all content — no CMS dependency
-- [Phase 1 risk]: Confirm repo type (user root vs project page) before writing any links — determines whether `base` config is needed
+- [01-01]: No base path — repo is prashantkhanchandani.github.io (user root), serves at /
+- [01-01]: withastro/action@v5 + OIDC auth (id-token: write) — no PAT in repo secrets needed
+- [01-01]: output: static — no server adapter, pure static generation confirmed
 
 ### Pending Todos
 
@@ -53,11 +55,11 @@ None yet.
 
 ### Blockers/Concerns
 
-- Repo name / type not confirmed: if repo is `prashantkhanchandani.github.io` (user root), no `base` needed; if named `portfolio` or similar, `base: '/portfolio'` required in astro.config.mjs. Resolve in Phase 1, Step 1.
+- GitHub repo `prashantkhanchandani.github.io` must be created on GitHub and Pages source set to "GitHub Actions" before the deploy pipeline can run. Code is ready — awaiting one-time user setup.
 - NDA status of Docker case studies unknown: assess before Phase 3 content work begins.
 
 ## Session Continuity
 
 Last session: 2026-02-27
-Stopped at: Roadmap created — ready to plan Phase 1
+Stopped at: Completed 01-01-PLAN.md — Astro 5 scaffold and GitHub Pages pipeline complete
 Resume file: None
