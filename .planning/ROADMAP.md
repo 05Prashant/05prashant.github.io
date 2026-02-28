@@ -44,7 +44,13 @@ Plans:
   3. A case study page shows the hero image, centered title / company / year, About section, and freeform markdown content below
   4. The CV page at `/cv` renders from a markdown file and is editable without touching code
   5. Navigating to a non-existent URL shows a custom 404 page matching the site's dark design
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Content Collections schema, image directories, case study stub, and prose CSS
+- [ ] 02-02-PLAN.md — Work index page with real case study cards from getCollection
+- [ ] 02-03-PLAN.md — Dynamic case study detail page at /work/[id]
+- [ ] 02-04-PLAN.md — CV layout and markdown page, custom 404 page, human verification
 
 ### Phase 3: Content
 **Goal**: All seven case studies are in markdown files and the work index is fully populated — the site is ready to share with hiring managers
@@ -64,5 +70,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-02-27 |
-| 2. Templates | 0/TBD | Not started | - |
+| 2. Templates | 0/4 | Not started | - |
 | 3. Content | 0/TBD | Not started | - |
