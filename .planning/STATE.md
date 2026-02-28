@@ -3,12 +3,12 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: in-progress
-last_updated: "2026-02-28T09:30:00Z"
+last_updated: "2026-02-28T09:36:26Z"
 progress:
   total_phases: 3
   completed_phases: 1
   total_plans: 7
-  completed_plans: 4
+  completed_plans: 5
 ---
 
 # Project State
@@ -23,28 +23,28 @@ See: .planning/PROJECT.md (updated 2026-02-26)
 ## Current Position
 
 Phase: 2 of 3 (Templates)
-Plan: 1 of 4 in current phase (complete)
-Status: Phase 2 in progress — Plan 02-01 complete (schema, stub, prose CSS); ready for 02-02 (work index)
-Last activity: 2026-02-28 — Plan 02-01 complete: content collections schema locked, booking-checkout stub validated, .prose styles added
+Plan: 4 of 4 in current phase (complete)
+Status: Phase 2 in progress — Plans 02-01 and 02-04 complete; 02-02 (work index) and 02-03 (case study detail) remaining
+Last activity: 2026-02-28 — Plan 02-04 complete: CvLayout.astro, cv.md, and 404.astro created; CV and 404 visually verified
 
-Progress: [████░░░░░░] ~40%
+Progress: [█████░░░░░] ~50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: ~4min
-- Total execution time: ~16min
+- Total plans completed: 5
+- Average duration: ~5min
+- Total execution time: ~26min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 3 | 14min | ~5min |
-| 02-templates | 1 | 2min | ~2min |
+| 02-templates | 2 | ~12min | ~6min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (7min), 01-02 (5min), 01-03 (~2min), 02-01 (~2min)
+- Last 5 plans: 01-01 (7min), 01-02 (5min), 01-03 (~2min), 02-01 (~2min), 02-04 (~10min incl. checkpoint)
 - Trend: Fast execution
 
 *Updated after each plan completion*
@@ -72,6 +72,9 @@ Recent decisions affecting current work:
 - [02-01]: year field z.number() not z.coerce.date() — year is a 4-digit integer
 - [02-01]: .prose class global in global.css — shared by case study and CV pages (DRY)
 - [02-01]: Image paths pattern: ../../assets/work/{slug}/ relative from src/content/work/
+- [02-04]: Astro.props.frontmatter (not Astro.props) — markdown pages pass frontmatter nested under .frontmatter; top-level props would be undefined
+- [02-04]: Delete cv.astro when creating cv.md — having both causes "Route /cv already defined" Astro error
+- [02-04]: GitHub Pages serves dist/404.html automatically for unmatched URLs — no server config needed
 
 ### Pending Todos
 
@@ -84,5 +87,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-28
-Stopped at: Completed 02-01-PLAN.md — schema locked, booking-checkout stub created, .prose styles added to global.css
+Stopped at: Completed 02-04-PLAN.md — CvLayout.astro, cv.md, 404.astro created and visually verified
 Resume file: None

@@ -25,8 +25,8 @@
 
 ### Static Pages
 
-- [ ] **PAGE-01**: CV page (`/cv`) built from a markdown file — career history, skills, editable without touching code
-- [ ] **PAGE-02**: Custom 404 page matching the site's dark design
+- [x] **PAGE-01**: CV page (`/cv`) built from a markdown file — career history, skills, editable without touching code
+- [x] **PAGE-02**: Custom 404 page matching the site's dark design
 
 ### Content Migration
 
@@ -84,8 +84,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CASE-01 | Phase 2 | Complete |
 | CASE-02 | Phase 2 | Pending |
 | CASE-03 | Phase 2 | Complete |
-| PAGE-01 | Phase 2 | Pending |
-| PAGE-02 | Phase 2 | Pending |
+| PAGE-01 | Phase 2 | Complete |
+| PAGE-02 | Phase 2 | Complete |
 | CONT-01 | Phase 3 | Pending |
 | CONT-02 | Phase 3 | Pending |
 
@@ -96,4 +96,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-26*
-*Last updated: 2026-02-27 — FOUND-01 through FOUND-04 all confirmed on live site after 01-03-PLAN.md verification*
+*Last updated: 2026-02-28 — PAGE-01 and PAGE-02 complete: CvLayout.astro + cv.md + 404.astro built and visually verified*

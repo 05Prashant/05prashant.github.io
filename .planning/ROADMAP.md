@@ -50,7 +50,7 @@ Plans:
 - [x] 02-01-PLAN.md — Content Collections schema, image directories, case study stub, and prose CSS
 - [ ] 02-02-PLAN.md — Work index page with real case study cards from getCollection
 - [ ] 02-03-PLAN.md — Dynamic case study detail page at /work/[id]
-- [ ] 02-04-PLAN.md — CV layout and markdown page, custom 404 page, human verification
+- [x] 02-04-PLAN.md — CV layout and markdown page, custom 404 page, human verification
 
 ### Phase 3: Content
 **Goal**: All seven case studies are in markdown files and the work index is fully populated — the site is ready to share with hiring managers
@@ -70,5 +70,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-02-27 |
-| 2. Templates | 1/4 | In progress | - |
+| 2. Templates | 2/4 | In progress | - |
 | 3. Content | 0/TBD | Not started | - |
