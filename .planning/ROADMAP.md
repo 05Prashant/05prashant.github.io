@@ -47,7 +47,7 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Content Collections schema, image directories, case study stub, and prose CSS
+- [x] 02-01-PLAN.md — Content Collections schema, image directories, case study stub, and prose CSS
 - [ ] 02-02-PLAN.md — Work index page with real case study cards from getCollection
 - [ ] 02-03-PLAN.md — Dynamic case study detail page at /work/[id]
 - [ ] 02-04-PLAN.md — CV layout and markdown page, custom 404 page, human verification
@@ -70,5 +70,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-02-27 |
-| 2. Templates | 0/4 | Not started | - |
+| 2. Templates | 1/4 | In progress | - |
 | 3. Content | 0/TBD | Not started | - |

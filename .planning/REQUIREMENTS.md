@@ -19,9 +19,9 @@
 
 ### Case Studies
 
-- [ ] **CASE-01**: Content Collections schema defined for case studies — frontmatter fields: title, company, year, description, heroImage, cardImage, cardImageSecondary (optional), order
+- [x] **CASE-01**: Content Collections schema defined for case studies — frontmatter fields: title, company, year, description, heroImage, cardImage, cardImageSecondary (optional), order
 - [ ] **CASE-02**: Individual case study pages (`/work/[slug]`) generated from markdown files — shows hero image, centered title / company / year, About section, then freeform markdown content below
-- [ ] **CASE-03**: Adding a new case study requires only creating a new `.md` file — no code changes needed
+- [x] **CASE-03**: Adding a new case study requires only creating a new `.md` file — no code changes needed
 
 ### Static Pages
 
@@ -81,9 +81,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUND-04 | Phase 1 | Complete |
 | WORK-01 | Phase 2 | Pending |
 | WORK-02 | Phase 2 | Pending |
-| CASE-01 | Phase 2 | Pending |
+| CASE-01 | Phase 2 | Complete |
 | CASE-02 | Phase 2 | Pending |
-| CASE-03 | Phase 2 | Pending |
+| CASE-03 | Phase 2 | Complete |
 | PAGE-01 | Phase 2 | Pending |
 | PAGE-02 | Phase 2 | Pending |
 | CONT-01 | Phase 3 | Pending |

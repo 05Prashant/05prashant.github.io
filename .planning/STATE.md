@@ -2,13 +2,13 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: unknown
-last_updated: "2026-02-27T09:16:54.047Z"
+status: in-progress
+last_updated: "2026-02-28T09:30:00Z"
 progress:
-  total_phases: 1
+  total_phases: 3
   completed_phases: 1
-  total_plans: 3
-  completed_plans: 3
+  total_plans: 7
+  completed_plans: 4
 ---
 
 # Project State
@@ -18,33 +18,34 @@ progress:
 See: .planning/PROJECT.md (updated 2026-02-26)
 
 **Core value:** A designer who deeply understands developer tools and AI products — the work speaks for itself through well-crafted case studies
-**Current focus:** Phase 1 — Foundation
+**Current focus:** Phase 2 — Templates
 
 ## Current Position
 
-Phase: 1 of 3 (Foundation)
-Plan: 3 of 3 in current phase
-Status: Phase 1 complete — all four requirements verified on live site; Phase 2 (Content/Templates) ready to begin
-Last activity: 2026-02-27 — Plan 01-03 complete: live site verified by user, all Phase 1 requirements confirmed
+Phase: 2 of 3 (Templates)
+Plan: 1 of 4 in current phase (complete)
+Status: Phase 2 in progress — Plan 02-01 complete (schema, stub, prose CSS); ready for 02-02 (work index)
+Last activity: 2026-02-28 — Plan 02-01 complete: content collections schema locked, booking-checkout stub validated, .prose styles added
 
-Progress: [████░░░░░░] ~33%
+Progress: [████░░░░░░] ~40%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 5min
-- Total execution time: 14min
+- Total plans completed: 4
+- Average duration: ~4min
+- Total execution time: ~16min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 3 | 14min | ~5min |
+| 02-templates | 1 | 2min | ~2min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (7min), 01-02 (5min), 01-03 (~2min)
-- Trend: —
+- Last 5 plans: 01-01 (7min), 01-02 (5min), 01-03 (~2min), 02-01 (~2min)
+- Trend: Fast execution
 
 *Updated after each plan completion*
 
@@ -66,6 +67,11 @@ Recent decisions affecting current work:
 - [01-02]: background-color on html,body (not just body) — prevents FOUC on iOS overscroll and initial load
 - [01-02]: global.css via frontmatter import in BaseLayout — idiomatic Astro 5 pattern
 - [01-03]: Phase 1 fully verified on live site — deploy pipeline green, dark theme FOUC-free, nav functional, mobile clean
+- [02-01]: glob loader (astro/loaders) used — not type:'content' which is Astro 4 API
+- [02-01]: schema as function ({ image }) => z.object({}) required when using image() helper
+- [02-01]: year field z.number() not z.coerce.date() — year is a 4-digit integer
+- [02-01]: .prose class global in global.css — shared by case study and CV pages (DRY)
+- [02-01]: Image paths pattern: ../../assets/work/{slug}/ relative from src/content/work/
 
 ### Pending Todos
 
@@ -77,6 +83,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-27
-Stopped at: Completed 01-03-PLAN.md — Phase 1 live site verification approved, all four FOUND-0x requirements confirmed
+Last session: 2026-02-28
+Stopped at: Completed 02-01-PLAN.md — schema locked, booking-checkout stub created, .prose styles added to global.css
 Resume file: None
