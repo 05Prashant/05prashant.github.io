@@ -1,0 +1,32 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+// Markdown pages in src/pages/ with a `layout` frontmatter property
+// pass their frontmatter under Astro.props.frontmatter — NOT Astro.props directly.
+// Using Astro.props.title directly would be undefined.
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+  <div class="container cv-content prose">
+    <slot />
+  </div>
+</BaseLayout>
+
+<style>
+  .cv-content {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    max-width: 720px;
+  }
+
+  .cv-content :global(h1) {
+    margin-bottom: 2.5rem;
+  }
+
+  .cv-content :global(h2) {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+</style>
