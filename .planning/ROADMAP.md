@@ -60,7 +60,12 @@ Plans:
   1. The work index shows all seven case studies in the correct order with images and company labels
   2. Four ported case studies (Booking.com checkout, Kitchen Notebook, Booking.com chatbot, Cleartrip Local) have full content including hero image, about section, and process narrative
   3. Three Docker case study stubs (onboarding, notifications, CLI) are present with title, company, year, and placeholder images — ready for Prashant to fill in content
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Docker stub placeholder images and three Docker markdown stubs (CONT-02)
+- [ ] 03-02-PLAN.md — Port booking-checkout and kitchen-notebook with real content; create chatbot and cleartrip-local with placeholder sections (CONT-01)
+- [ ] 03-03-PLAN.md — Image checkpoint (Prashant provides real images for ported case studies) and final build verification
 
 ## Progress
 
@@ -71,4 +76,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-02-27 |
 | 2. Templates | 4/4 | Complete | 2026-02-28 |
-| 3. Content | 0/TBD | Not started | - |
+| 3. Content | 0/3 | Not started | - |
