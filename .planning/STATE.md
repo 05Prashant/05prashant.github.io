@@ -3,12 +3,12 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: in-progress
-last_updated: "2026-02-28T09:36:26Z"
+last_updated: "2026-02-28T12:00:00Z"
 progress:
   total_phases: 3
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 7
-  completed_plans: 5
+  completed_plans: 7
 ---
 
 # Project State
@@ -22,12 +22,12 @@ See: .planning/PROJECT.md (updated 2026-02-26)
 
 ## Current Position
 
-Phase: 2 of 3 (Templates)
+Phase: 2 of 3 (Templates) — COMPLETE
 Plan: 4 of 4 in current phase (complete)
-Status: Phase 2 in progress — Plans 02-01 and 02-04 complete; 02-02 (work index) and 02-03 (case study detail) remaining
-Last activity: 2026-02-28 — Plan 02-04 complete: CvLayout.astro, cv.md, and 404.astro created; CV and 404 visually verified
+Status: Phase 2 complete — all 4 plans done (02-01, 02-02, 02-03, 02-04); ready to begin Phase 3 Content
+Last activity: 2026-02-28 — Plans 02-02 and 02-03 documented: work index and case study detail page complete; Phase 2 fully done
 
-Progress: [█████░░░░░] ~50%
+Progress: [██████████] ~100% Phase 2 (67% overall)
 
 ## Performance Metrics
 
@@ -75,6 +75,10 @@ Recent decisions affecting current work:
 - [02-04]: Astro.props.frontmatter (not Astro.props) — markdown pages pass frontmatter nested under .frontmatter; top-level props would be undefined
 - [02-04]: Delete cv.astro when creating cv.md — having both causes "Route /cv already defined" Astro error
 - [02-04]: GitHub Pages serves dist/404.html automatically for unmatched URLs — no server config needed
+- [02-02]: entry.id used for card links (not entry.slug) — slug does not exist on Astro 5 collection entries
+- [02-02]: cardImageSecondary guarded with conditional render — field is optional in schema; alt="" on decorative secondary
+- [02-03]: render() imported standalone from 'astro:content' — entry.render() was Astro 4 API, removed in Astro 5
+- [02-03]: [id].astro filename bracket key must match params key exactly for Astro routing to resolve dynamic segment
 
 ### Pending Todos
 
@@ -87,5 +91,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-28
-Stopped at: Completed 02-04-PLAN.md — CvLayout.astro, cv.md, 404.astro created and visually verified
+Stopped at: Completed 02-03-PLAN.md (and 02-02-PLAN.md) — work index and case study detail documented; Phase 2 fully complete
 Resume file: None
