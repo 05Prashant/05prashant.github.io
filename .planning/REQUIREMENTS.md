@@ -35,7 +35,7 @@
   - Redesigning the Kitchen Notebook — Self
   - Chatbot and conversational interface research — Booking.com
   - Cleartrip Local events discovery — Cleartrip
-- [ ] **CONT-02**: Create placeholder markdown stubs for Docker case studies (title, company, year, images) so the work index is populated — Prashant fills in content
+- [x] **CONT-02**: Create placeholder markdown stubs for Docker case studies (title, company, year, images) so the work index is populated — Prashant fills in content
   - Introducing developers to a new tool — Docker
   - A notification system for Docker Desktop — Docker
   - Command line tool to get started — Docker
@@ -87,7 +87,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-01 | Phase 2 | Complete |
 | PAGE-02 | Phase 2 | Complete |
 | CONT-01 | Phase 3 | Pending |
-| CONT-02 | Phase 3 | Pending |
+| CONT-02 | Phase 3 | Complete |
 
 **Coverage:**
 - v1 requirements: 13 total
