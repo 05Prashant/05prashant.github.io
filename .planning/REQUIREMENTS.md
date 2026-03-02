@@ -30,7 +30,7 @@
 
 ### Content Migration
 
-- [ ] **CONT-01**: Port case studies from current Squarespace site into markdown files:
+- [x] **CONT-01**: Port case studies from current Squarespace site into markdown files:
   - Overhauling a checkout experience — Booking.com
   - Redesigning the Kitchen Notebook — Self
   - Chatbot and conversational interface research — Booking.com
@@ -86,7 +86,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CASE-03 | Phase 2 | Complete |
 | PAGE-01 | Phase 2 | Complete |
 | PAGE-02 | Phase 2 | Complete |
-| CONT-01 | Phase 3 | Pending |
+| CONT-01 | Phase 3 | Complete |
 | CONT-02 | Phase 3 | Complete |
 
 **Coverage:**

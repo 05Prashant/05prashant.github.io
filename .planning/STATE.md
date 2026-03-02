@@ -23,11 +23,11 @@ See: .planning/PROJECT.md (updated 2026-02-26)
 ## Current Position
 
 Phase: 3 of 3 (Content) — IN PROGRESS
-Plan: 1 of 3 in current phase (complete)
-Status: Phase 3 Plan 1 complete — Docker stub images and markdown files created; work index now shows 3 Docker cards
-Last activity: 2026-03-02 — Plan 03-01 done: 6 placeholder JPEGs and 3 Docker stub markdowns created
+Plan: 2 of 3 in current phase (complete)
+Status: Phase 3 Plan 2 complete — booking-checkout real content written, kitchen-notebook created, booking-chatbot and cleartrip-local scaffolded with TODO sections
+Last activity: 2026-03-02 — Plan 03-02 done: 4 case study content files written; orders 1-4 populated
 
-Progress: [████████░░] ~80% overall (Phase 3: 1/3 plans done)
+Progress: [█████████░] ~87% overall (Phase 3: 2/3 plans done)
 
 ## Performance Metrics
 
@@ -49,7 +49,8 @@ Progress: [████████░░] ~80% overall (Phase 3: 1/3 plans done
 - Trend: Fast execution
 
 *Updated after each plan completion*
-| Phase 03-content P02 | 2 | 2 tasks | 4 files |
+
+| Phase 03-content P02 | 2min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -97,5 +98,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-02
-Stopped at: Completed 03-01-PLAN.md — Docker stub images and markdowns created; ready for Plan 03-02
+Stopped at: Completed 03-02-PLAN.md — case study content written for all four case studies (booking-checkout, kitchen-notebook, booking-chatbot, cleartrip-local); ready for Plan 03-03 image checkpoint
 Resume file: None
