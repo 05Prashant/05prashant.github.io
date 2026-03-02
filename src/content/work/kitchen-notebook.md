@@ -5,7 +5,6 @@ year: 2019
 description: "A personal project to design a better tool for capturing and sharing recipes while cooking."
 heroImage: "../../assets/work/kitchen-notebook/hero.jpg"
 cardImage: "../../assets/work/kitchen-notebook/card-main.jpg"
-cardImageSecondary: "../../assets/work/kitchen-notebook/card-secondary.jpg"
 order: 2
 draft: false
 ---

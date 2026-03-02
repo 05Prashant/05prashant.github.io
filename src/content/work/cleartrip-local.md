@@ -5,7 +5,6 @@ year: 2016
 description: "Designing a local events and experiences discovery feature for the Cleartrip app."
 heroImage: "../../assets/work/cleartrip-local/hero.jpg"
 cardImage: "../../assets/work/cleartrip-local/card-main.jpg"
-cardImageSecondary: "../../assets/work/cleartrip-local/card-secondary.jpg"
 order: 4
 draft: false
 ---
