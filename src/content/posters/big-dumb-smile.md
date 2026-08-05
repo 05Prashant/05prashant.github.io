@@ -1,8 +1,9 @@
 ---
 title: "Big Dumb Smile"
-blurb: "Poster for a standup comedy hour by Karl Dagher at Edinburgh Fringe."
+blurb: "Concept, Posters and Branding for a Solo comedy show"
 images:
-  - "../../assets/posters/big-dumb-smile.jpg"
-order: 4
+  - "../../assets/posters/big-dumb-smile/1-poster.jpg"
+  - "../../assets/posters/big-dumb-smile/2-banner.jpg"
+order: 2
 draft: false
 ---

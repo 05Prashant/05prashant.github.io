@@ -1,8 +1,9 @@
 ---
-title: "The Weird Show"
-blurb: "Poster for What The Goose's non-standup comedy night — characters, sketch, clown, and puppets."
+title: "What the Goose"
+blurb: "Posters and Branding for a monthly comedy show."
 images:
-  - "../../assets/posters/the-weird-show.jpg"
-order: 3
+  - "../../assets/posters/what-the-goose/1-poster.jpg"
+  - "../../assets/posters/what-the-goose/2-show.jpg"
+order: 4
 draft: false
 ---

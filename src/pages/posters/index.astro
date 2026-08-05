@@ -12,6 +12,7 @@ const sortedPosters = allPosters.sort((a, b) => a.data.order - b.data.order);
   <div class="container page-content">
     <BackLink />
     <h1 class="page-title">Posters</h1>
+    <p class="page-description">I sometimes design posters for the local comedy community in the Netherlands.</p>
 
     <ul class="poster-groups" role="list">
       {sortedPosters.map((entry) => (
@@ -41,6 +42,11 @@ const sortedPosters = allPosters.sort((a, b) => a.data.order - b.data.order);
 
   .page-title {
     margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .page-description {
+    color: var(--color-text-muted);
     margin-bottom: 3rem;
   }
 
@@ -55,6 +61,12 @@ const sortedPosters = allPosters.sort((a, b) => a.data.order - b.data.order);
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
+  }
+
+  .poster-info {
+    align-self: start;
+    position: sticky;
+    top: 2rem;
   }
 
   .poster-info h2 {
@@ -83,6 +95,10 @@ const sortedPosters = allPosters.sort((a, b) => a.data.order - b.data.order);
   @media (max-width: 640px) {
     .poster-group {
       grid-template-columns: 1fr;
+    }
+
+    .poster-info {
+      position: static;
     }
   }
 </style>

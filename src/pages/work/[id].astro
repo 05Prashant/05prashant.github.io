@@ -23,7 +23,10 @@ const { Content } = await render(entry);
       <BackLink />
     </div>
 
-    <div class="case-hero container page-content">
+    <div
+      class="case-hero container page-content"
+      style={entry.data.heroBackground ? `background-color: ${entry.data.heroBackground}; padding-top: 20px; padding-bottom: 20px;` : undefined}
+    >
       <Image
         src={entry.data.heroImage}
         alt={entry.data.title}

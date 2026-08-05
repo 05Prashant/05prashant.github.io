@@ -3,7 +3,8 @@ title: "Redesigning the Kitchen Notebook"
 company: "Self"
 year: 2019
 description: "A personal project to design a better tool for capturing and sharing recipes while cooking."
-heroImage: "../../assets/work/kitchen-notebook/hero.jpg"
+heroImage: "../../assets/work/kitchen-notebook/hero.png"
+heroBackground: "#3A48C7"
 order: 5
 draft: false
 ---

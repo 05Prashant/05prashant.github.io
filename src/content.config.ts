@@ -15,6 +15,7 @@ const work = defineCollection({
       year: z.number(),
       description: z.string(),
       heroImage: image(),
+      heroBackground: z.string().optional(),
       order: z.number(),
       draft: z.boolean().optional().default(false),
     }),
@@ -32,4 +33,20 @@ const posters = defineCollection({
     }),
 });
 
-export const collections = { work, posters };
+const writing = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/writing' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      subtitle: z.string().optional(),
+      date: z.coerce.date(),
+      heroImage: image().optional(),
+      heroCaption: z.string().optional(),
+      sourceUrl: z.string().url(),
+      sourceName: z.string(),
+      order: z.number(),
+      draft: z.boolean().optional().default(false),
+    }),
+});
+
+export const collections = { work, posters, writing };
