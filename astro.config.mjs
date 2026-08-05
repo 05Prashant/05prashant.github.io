@@ -6,6 +6,5 @@ export default defineConfig({
   site: 'https://prashantkhanchandani.github.io',
   // NO base: — this is a user root repo, serves from /
   output: 'static',
-  trailingSlash: 'never',
   integrations: [sitemap()],
 });
