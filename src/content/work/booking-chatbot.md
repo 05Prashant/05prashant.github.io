@@ -5,7 +5,7 @@ year: 2018
 description: "Prototyping and researching conversational interfaces for the Booking.com chatbot."
 heroImage: "../../assets/work/booking-chatbot/hero.jpg"
 cardImage: "../../assets/work/booking-chatbot/card-main.jpg"
-order: 3
+order: 6
 draft: false
 ---
 

@@ -6,7 +6,7 @@ description: "End-to-end redesign of the Booking.com checkout flow."
 heroImage: "../../assets/work/booking-checkout/hero.jpg"
 cardImage: "../../assets/work/booking-checkout/card-main.jpg"
 cardImageSecondary: "../../assets/work/booking-checkout/card-secondary.jpg"
-order: 1
+order: 4
 draft: false
 ---
 

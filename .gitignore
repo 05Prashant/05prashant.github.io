@@ -25,3 +25,9 @@ pnpm-debug.log*
 # claude
 .claude
 .watchfire/
+
+# planning (GSD workflow artifacts)
+.planning/
+
+# agents context + raw content
+.agents/
