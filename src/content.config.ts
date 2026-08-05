@@ -15,11 +15,21 @@ const work = defineCollection({
       year: z.number(),
       description: z.string(),
       heroImage: image(),
-      cardImage: image(),
-      cardImageSecondary: image().optional(),
       order: z.number(),
       draft: z.boolean().optional().default(false),
     }),
 });
 
-export const collections = { work };
+const posters = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/posters' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      blurb: z.string(),
+      images: z.array(image()),
+      order: z.number(),
+      draft: z.boolean().optional().default(false),
+    }),
+});
+
+export const collections = { work, posters };

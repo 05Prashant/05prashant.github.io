@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import BackLink from '../components/BackLink.astro';
 
 // Markdown pages in src/pages/ with a `layout` frontmatter property
 // pass their frontmatter under Astro.props.frontmatter — NOT Astro.props directly.
@@ -8,7 +9,8 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout title={frontmatter.title} description={frontmatter.description}>
-  <div class="container cv-content prose">
+  <div class="container page-content cv-content prose">
+    <BackLink />
     <slot />
   </div>
 </BaseLayout>
@@ -17,7 +19,11 @@ const { frontmatter } = Astro.props;
   .cv-content {
     padding-top: 4rem;
     padding-bottom: 6rem;
-    max-width: 720px;
+  }
+
+  .cv-content :global(.back-link) {
+    display: block;
+    margin-bottom: 2.5rem;
   }
 
   .cv-content :global(h1) {

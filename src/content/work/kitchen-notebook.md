@@ -4,7 +4,6 @@ company: "Self"
 year: 2019
 description: "A personal project to design a better tool for capturing and sharing recipes while cooking."
 heroImage: "../../assets/work/kitchen-notebook/hero.jpg"
-cardImage: "../../assets/work/kitchen-notebook/card-main.jpg"
 order: 5
 draft: false
 ---

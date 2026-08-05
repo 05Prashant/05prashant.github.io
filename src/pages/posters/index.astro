@@ -1,0 +1,88 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BackLink from '../../components/BackLink.astro';
+
+const allPosters = await getCollection('posters', ({ data }) => !data.draft);
+const sortedPosters = allPosters.sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout title="Posters" description="Poster design work by Prashant Khanchandani">
+  <div class="container page-content">
+    <BackLink />
+    <h1 class="page-title">Posters</h1>
+
+    <ul class="poster-groups" role="list">
+      {sortedPosters.map((entry) => (
+        <li class="poster-group">
+          <div class="poster-info">
+            <h2>{entry.data.title}</h2>
+            <p class="poster-blurb">{entry.data.blurb}</p>
+          </div>
+          <ul class="poster-assets" role="list">
+            {entry.data.images.map((img) => (
+              <li>
+                <Image src={img} alt={entry.data.title} class="poster-asset" />
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-content {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+  }
+
+  .page-title {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .poster-groups {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .poster-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  .poster-info h2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .poster-blurb {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+
+  .poster-assets {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .poster-asset {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    .poster-group {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

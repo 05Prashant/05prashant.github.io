@@ -1,0 +1,18 @@
+---
+// BackLink.astro
+// Minimal return-to-homepage link for sub-pages, since the site has no nav bar.
+---
+<a href="/" class="back-link">← Prashant Khanchandani</a>
+
+<style>
+  .back-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    transition: color 0.15s ease;
+  }
+
+  .back-link:hover {
+    color: var(--color-text);
+  }
+</style>
