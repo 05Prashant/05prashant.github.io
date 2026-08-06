@@ -15,7 +15,7 @@ I worked as the sole UX designer on Booking.com's Attractions team, responsible 
 
 ## The Challenge
 
-The existing checkout experience had accumulated significant complexity over time. A usability study and quantitative analysis conducted with researcher Yaniv identified three critical issues: the date, time, and ticket selection UI was overcomplicated; the interface design was confusing at key decision points; and users were hitting an excessive number of validation errors during checkout — causing drop-off before completing a purchase.
+The existing checkout experience had accumulated significant complexity over time. A usability study and quantitative analysis conducted with researcher Yaniv identified three critical issues: the date, time, and ticket selection UI was overcomplicated; the interface design was confusing at key decision points; and users were hitting an excessive number of validation errors during checkout - causing drop-off before completing a purchase.
 
 ## Approach
 
@@ -25,8 +25,8 @@ To validate the approach before shipping, two alternatives were tested on userte
 
 ## A/B Testing
 
-The core hypothesis was that combining ticket selection with the checkout step was the root cause of excessive validation errors. An A/B test split the flow into separate steps. Results showed fewer users reaching the checkout step overall, but significantly reduced validation errors among those who did — and conversion rates held steady. The simplified flow proved the hypothesis.
+The core hypothesis was that combining ticket selection with the checkout step was the root cause of excessive validation errors. An A/B test split the flow into separate steps. Results showed fewer users reaching the checkout step overall, but significantly reduced validation errors among those who did - and conversion rates held steady. The simplified flow proved the hypothesis.
 
 ## Final Product
 
-The shipped design simplified the overall flow, measurably decreased validation errors, and elevated ticket pricing visibility earlier in the funnel. The redesigned structure also provided scalability for future work — giving the team a foundation to differentiate ticket types, show availability comparisons, and surface pricing context without further rearchitecting the checkout.
+The shipped design simplified the overall flow, measurably decreased validation errors, and elevated ticket pricing visibility earlier in the funnel. The redesigned structure also provided scalability for future work - giving the team a foundation to differentiate ticket types, show availability comparisons, and surface pricing context without further rearchitecting the checkout.
