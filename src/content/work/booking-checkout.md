@@ -11,22 +11,50 @@ draft: false
 
 ## About
 
-I worked as the sole UX designer on Booking.com's Attractions team, responsible for tours, activities, and experiences. The project was a full redesign of the checkout flow across desktop web, mobile web, and the Booking.com app's web views. My role spanned UX design, user research, prototyping, quantitative analysis, and A/B testing. The team included a copywriter, four developers, a researcher, and a project manager.
+I worked on this project as the UX designer in Booking.com’s Attractions team.
 
-## The Challenge
+This product helps people book tours and activities while on their trips. This project was a redesign of the checkout experience on the desktop web, mobile web, and the Booking.com apps through web views. I was involved in UX design, user research, prototyping, quantitative analysis and A/B testing.
 
-The existing checkout experience had accumulated significant complexity over time. A usability study and quantitative analysis conducted with researcher Yaniv identified three critical issues: the date, time, and ticket selection UI was overcomplicated; the interface design was confusing at key decision points; and users were hitting an excessive number of validation errors during checkout - causing drop-off before completing a purchase.
+I was the only designer in a team of a copywriter, four developers, a researcher and a project manager. This redesign fixed some of the significant issues with our checkout flow. It made sure we had a scalable solution for our growing business.
 
-## Approach
+## Research
 
-The most impactful change was restructuring date, time, and ticket selection to the top of the checkout flow. Multiple interaction approaches were explored through sketching and Figma prototyping, with bi-weekly design reviews to pressure-test the direction.
+We knew from our previous research that the checkout flow had some fundamental usability issues. To understand these problems better, me and Yaniv (the senior researcher working in our team) did some usability studies and quantitative analysis. 
 
-To validate the approach before shipping, two alternatives were tested on usertesting.com against the existing design as a control: (1) splitting the flow into three distinct sequential steps, and (2) integrating ticket selection directly into the details page so pricing was visible upfront. Both were evaluated on task completion, error rate, and user confidence.
+We found a myriad of problems that we needed to solve. Here are the most critical issues we wanted to tackle:
+![Problems we found](../../assets/work/booking-checkout/problems.png)
 
-## A/B Testing
+## Solution Exploration
 
-The core hypothesis was that combining ticket selection with the checkout step was the root cause of excessive validation errors. An A/B test split the flow into separate steps. Results showed fewer users reaching the checkout step overall, but significantly reduced validation errors among those who did - and conversion rates held steady. The simplified flow proved the hypothesis.
+With the overview of the problems, it was clear that we would have the most significant impact if we change how users pick their dates, times and tickets. The date, time and ticket selection was on the top of the checkout flow. It was one of the more confusing parts that we needed to fix.
+
+I started exploring different ways in which users can pick their dates, times and tickets. A few hours of sketching and prototyping on Figma led me to a few ideas I could share with the team. I like to make sure the entire team is part of the design process, so we have bi-weekly design reviews. After a few iterations with the team, I was able to narrow down the ideas we wanted to explore further.
+
+Here are some of the prototypes I made during the initial exploration:
+![Screenshots of early wireframes for the solution](../../assets/work/booking-checkout/solution-exploration.png)
+
+## Idea Validation
+
+### User Research
+Even though we had a fair understanding of what we should build, we had a few assumptions that needed validation. I used usertesting.com to get some real-world feedback. My test focused on two broadly different approaches:
+
+- We tried splitting the flow into three different steps (attraction details, ticket selection and book page). This approach made sure the cognitive load on each page was minimal.
+
+- The other approach involved moving the ticket selection as part of the content on the details page. This change helped users view tickets and prices upfront while reading about the attraction.
+
+We also conducted the same user test with the existing design as a control to make sure that we were in-fact solving the problems we set out to tackle. This research helped us fix some critical issues with both of our prototypes.
+
+### A/B Tests
+We also got our final bit of validation through an A/B test. One of our hypothesis was that the booking flow was too strenuous because the ticket selection and checkout were on the same step. Due to this reason, we saw a large number of empty-field validation errors.
+
+To test this out, we split the flow into two steps; ticket selection and checkout. If we were correct, doing so would cause fewer people to see the checkout section. Of the people that do see it, we would see a lower percentage of validation errors.
+
+We saw a significant reduction on people seeing the checkout section, with a reduction in validation errors, without any change in conversion. This change helped us gain even more confidence in our high-level assumptions.
 
 ## Final Product
+Our final solution solved a majority of the issues we wanted to fix. It made the flow simpler, reduced validation errors and highlighted ticket prices higher up in the funnel. 
 
-The shipped design simplified the overall flow, measurably decreased validation errors, and elevated ticket pricing visibility earlier in the funnel. The redesigned structure also provided scalability for future work - giving the team a foundation to differentiate ticket types, show availability comparisons, and surface pricing context without further rearchitecting the checkout.
+This solution is even more scalable since we can easily highlight what makes one ticket different or better than the other. Users can now also compare availability and prices between different products too (e.g. when comparing similar tours). 
+
+![Secreenshots showing the mobile checkout process](../../assets/work/booking-checkout/final-m.png)
+![Secreenshots showing the desktop checkout process](../../assets/work/booking-checkout/final-d.png)

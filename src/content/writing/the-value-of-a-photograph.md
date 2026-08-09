@@ -3,7 +3,6 @@ title: "The Value of a Photograph"
 subtitle: "And how it relates to the future of the tech industry"
 date: 2023-03-26
 heroImage: "../../assets/writing/the-value-of-a-photograph/hero.jpg"
-heroCaption: "Early color photo of Agen, France, by Louis Ducos du Hauron, 1877."
 sourceUrl: "https://lookfeel.substack.com/p/the-value-of-a-photograph"
 sourceName: "Substack"
 order: 1

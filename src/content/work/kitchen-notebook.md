@@ -11,24 +11,25 @@ draft: false
 
 ## About
 
-Kitchen Notebook is a personal project. I spend time learning and refining recipes, and I have always kept notes - usually on paper. The vision for this project was a tool that makes it easy to capture a recipe while cooking, and just as easy to read or share with someone else later.
+Kitchen notes is a personal project that originated from a problem I was facing in the kitchen. I spend a lot of time learning new recipes and iterating on the ones that I like. I usually write my recipes on paper. I wanted to build a tool that helps me save recipes while I cook. I also wanted an easy way to read and share recipes with others. 
+
+![Iamge showing how I document my recipies in scraps of paper](../../assets/work/kitchen-notebook/problem.png)
 
 ## The Problem
 
-Two friction points drove the project.
+Throughout the ideation process, I identified the problems I wanted to solve with this project. During this time, I wrote down my own experiences with documenting and sharing recipes and asked friends and family about their problems with the same. Here are the issues I set out to solve:
 
-The first was capturing recipes during the cooking process itself. Cooking involves multitasking with busy hands - flour-dusted fingers, a spoon in one hand, something on the stove. Notes written later often leave out ingredients or steps that seemed obvious in the moment. The goal was to simplify capturing texture, colour, and process details as they happen.
+- Recording and updating recipes: Writing down recipes while cooking can be a messy situation. Usually, you have your hands busy and multiple time-sensitive tasks to complete. If you pick to write down instructions later, there is a high chance that you forget ingredients or entire steps. I also wanted an easy way to document texture and colour, which are two essential aspects of cooking.
 
-The second was sharing. Recipe requests from friends and family are common, but sending a recipe via a link, a photo of notes, or a series of messages is clumsy. There was no obvious, clean way to share something that felt as considered as the dish itself.
-
-## Competitive Analysis
-
-I examined four existing tools - KitchenStories, CookPad, Jumprope (focused on instructional video creation), and Instagram. To understand their limitations, I created actual recipes on each platform rather than just reviewing the interface. Documenting the experience of creating content on each tool surfaced strengths and constraints that would not be visible from observation alone.
+- Sharing recipes: I sometimes get asked for recipes. I’ve sent people links, images from my notes and even long WhatsApp messages. I believe that if home cooks could digitise their work, it would help them share recipes easily.
 
 ## Explorations
 
-Initial mockups focused on the recipe creation flow - the goal was an interface that was straightforward, transparent, and effective at capturing comprehensive details without friction. Several directions were sketched and refined based on feedback from friends and family who cook regularly.
+After my initial research and competitive analysis, it was clear that the meat of the problem was the recipe creation flow. I had to design a recipe creation process that was simple, clear and efficient at saving every possible detail.
+
+Once I had a clear idea of the functionality and experience needed, I started making some mockups of the recipe creation flow. Soon after that I built the first version of the app to test out. Since I didn’t have access to users or co-workers to test with, I did a few feedback sessions with Friends and Family. The app was beneficial for highlighting problems that I missed with the static mockups (like typing with wet hands). After a few rounds of testing the app, I went back to Figma with a list of critical issues that needed fixing.
 
 ## Prototype
 
-Static mockups made it difficult to evaluate how the solution would feel in real use. I built a functional prototype to test core interactions in genuine cooking scenarios. The prototype quickly revealed challenges that had not surfaced in static reviews - most notably, the difficulty of typing with wet or busy hands. That insight reoriented several interaction decisions. The prototype-driven approach identified the most critical issues before committing to a final design direction.
+The flow highlighted below is the next version of the app. This was a fun exploratory exercise. I learnt the advantage of having a functional prototype early in the product development process.
+![Screens of the app that I designed](../../assets/work/kitchen-notebook/final.png)
