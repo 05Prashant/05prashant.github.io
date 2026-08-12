@@ -136,6 +136,20 @@ a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+  /* margin: 1.5rem 0; */
+}
+
+/* Two (or more) images placed on consecutive markdown lines with no blank
+   line between them land in the same <p> — lay those out side by side. */
+.prose p:has(img + img) {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.prose p:has(img + img) img {
+  flex: 1;
+  min-width: 0;
   margin: 1.5rem 0;
 }
 

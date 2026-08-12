@@ -14,6 +14,11 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+
+const allWork = await getCollection('work', ({ data }) => !data.draft);
+const otherWork = allWork
+  .filter((item) => item.id !== entry.id)
+  .sort((a, b) => a.data.order - b.data.order);
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
@@ -42,6 +47,22 @@ const { Content } = await render(entry);
     <div class="case-body container page-content prose">
       <Content />
     </div>
+
+    {otherWork.length > 0 && (
+      <div class="case-more container page-content">
+        <h2>More work</h2>
+        <ul class="link-list" role="list">
+          {otherWork.map((item) => (
+            <li>
+              <a href={`/work/${item.id}`} class="entry-link">
+                {item.data.title}
+                <span class="entry-meta">{item.data.company} - {item.data.year}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
 
   </article>
 </BaseLayout>
@@ -85,6 +106,53 @@ const { Content } = await render(entry);
 
   .case-meta {
     font-size: 0.95rem;
+    color: var(--color-text-muted);
+  }
+
+  .case-more {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .case-more h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .link-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .entry-link {
+    display: block;
+    color: var(--color-text);
+  }
+
+  a.entry-link {
+    position: relative;
+    isolation: isolate;
+  }
+
+  a.entry-link::before {
+    content: '';
+    position: absolute;
+    inset: -0.4rem -0.6rem;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.15s ease;
+    z-index: -1;
+  }
+
+  a.entry-link:hover::before {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .entry-meta {
+    display: block;
+    font-size: 0.9rem;
     color: var(--color-text-muted);
   }
 
