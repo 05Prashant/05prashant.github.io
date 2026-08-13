@@ -26,4 +26,5 @@ Throughout the ideation process, I identified the problems I wanted to solve wit
 ## Prototype
 
 I spent the next 6 months building a recipe app on React Native to test with friends and family. It included an intuitive creation flow, and a cooking experience that focused on showing one step at a time. This was a fun exploratory exercise; I'm keen to revisit it soon.
+
 ![Screens of the app that I designed](../../assets/work/kitchen-notebook/final-m.png)

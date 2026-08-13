@@ -14,7 +14,7 @@ Docker is an open source project that helps deliver software in packages called 
 
 I was the lead designer for this initiative; I worked with a PM, and four engineers to build the MVP that was tested with 32 Early Access users. The initiative successfully validated strong user engagement and value but was discontinued to focus on Docker Hardened Images (DHI), and Docker's AI initiatives.
 
-## Project Goals and Values
+## Goals
 The exploratory interviews I ran showed us that Docker had two kinds of developers, and they interacted with Docker very differently. 
 
 First, the Producers, who wrote Dockerfiles, understood the Docker primitives, and were motivated to build secure, optimised images.
